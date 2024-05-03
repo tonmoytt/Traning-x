@@ -1,13 +1,16 @@
-import Navbar from "../Navbar/Navbar";
+
+import Banner from "./Banner/Banner";
 import Header from "./Header/Header";
 
- 
+
+
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
-            <Navbar></Navbar>
+            
+          
+            <Banner></Banner>
         </div>
     );
 };

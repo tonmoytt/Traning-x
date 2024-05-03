@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 #color2 {
     /* letter-spacing: 1px; */
     background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
@@ -26,9 +21,7 @@
     }
 }
 
-
-/* box */
-
-#rotate:hover{
-    transform:  rotate(-1deg);
+.zindex{
+    z-index: 2;
+    overflow: visible;
 }
