@@ -1,6 +1,7 @@
 
 import Banner from "./Banner/Banner";
-import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
             
           
             <Banner></Banner>
+            <Footer></Footer>
         </div>
     );
 };

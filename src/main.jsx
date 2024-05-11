@@ -12,6 +12,9 @@ import Takecourse from './All Components/Components/Navbar/Takecourse/Takecourse
 import ShowDetailsData from './All Components/Components/Navbar/Takecourse/ShowDetailsData.jsx';
 import SignUp from './All Components/Components/Navbar/SignUp/SignUp.jsx';
 import Login from './All Components/Components/Navbar/Login/Login.jsx';
+import Form from './All Components/Components/Home/Banner/Form/Form.jsx';
+import Contactus from './All Components/Components/Home/Footer/Contactus/Contactus.jsx';
+import AboutUs from './All Components/Components/Home/Footer/AboutUs/AboutUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,12 +38,19 @@ const router = createBrowserRouter([
         element:<Takecourse></Takecourse>,
         loader: () => fetch('/Data.json'),
       },
+      
       {
-        path:'/takecourse/:id',
-        element:<ShowDetailsData></ShowDetailsData>,
-        loader: () => fetch('/Data.json'),
+        path:'/form',
+        element:<Form></Form>
       },
-
+      {
+        path:'/contact',
+        element:<Contactus></Contactus>
+      },
+      {
+        path:'/aboutus',
+        element:<AboutUs></AboutUs>
+      },
     ]
   },
 ]);

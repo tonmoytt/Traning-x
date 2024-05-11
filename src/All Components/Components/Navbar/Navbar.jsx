@@ -5,7 +5,7 @@
 import { FaSearch } from "react-icons/fa";
 import img from "./../../../assets/image/edx-logo-elm.svg"
 import "./Style.css"
-import { IoIosArrowDown, IoIosArrowDropright, IoIosArrowDroprightCircle, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="flex justify-between">
             {/* first/logo section */}
             <div className="flex gap-4 py-4 ml-6">
-                <img className="h-12 w-12" src={img} alt="" />
+                <Link to="/"><img className="h-12 w-12" src={img} alt="" /></Link>
                 {/* learn section  */}
                 <div onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="flex bg-black text-white gap-2 px-2 rounded-sm ">
 
