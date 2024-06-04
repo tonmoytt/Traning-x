@@ -38,6 +38,11 @@ const router = createBrowserRouter([
         element:<Takecourse></Takecourse>,
         loader: () => fetch('/Data.json'),
       },
+      {
+        path:'/takecourse/:id',
+        element:<ShowDetailsData></ShowDetailsData>,
+        loader: () => fetch('/Data.json'),
+      },
       
       {
         path:'/form',

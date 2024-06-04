@@ -9,10 +9,10 @@ const ShowDetailsData = () => {
     const params = useParams()
     // console.log(params);
     const loader = useLoaderData()
-    // console.log(loader);
+    console.log(loader);
 
     useEffect(() => {
-        const findloader = loader?.find(data => data.id === parseInt(params.id))
+        const findloader = loader?.find(data => data.id=== parseInt(params.id))
         setdata(findloader);
     }, [params.id, loader])
 

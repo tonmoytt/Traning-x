@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="bg-gray-100 mt-20 px-6">
+        <div className="bg-gray-100 px-6">
             <div className="py-20 grid md:grid-cols-4">
 
                 <div>
@@ -41,7 +41,7 @@ const Footer = () => {
                     {/* <p className="text-xl font-bold pb-4">Social</p> */}
                     {/* logo */}
                     <div className="style-css ml-0 md:ml-4 lg:ml-[30px] w-[90px] md:w-[50px]">
-                        <h2 data-text="CreativeIT" className="style-css-two text-4xl  ml-40 md:ml-24 lg:">CreativeIT</h2>
+                        <h2 data-text="TRAINER~X" className="style-css-two text-4xl  ml-40 md:ml-24 lg:">TRAINER~X</h2>
                     </div>
 
 

@@ -1,14 +1,16 @@
 import { RxCross2 } from "react-icons/rx";
 import { useLoaderData } from "react-router-dom";
 import ShowData from "./ShowData/ShowData";
+import Footer from "../../Home/Footer/Footer";
 
 
 
 const Takecourse = () => {
     const data = useLoaderData()
     console.log(data);
+    
     return (
-        <div className='grid grid-cols-4'>
+        <div>  <div className='grid grid-cols-4'>
             <div className='col-span-1 border-2 pl-10'>
                 <p className="text-gray-600">Search here</p>
                 {/* first section */}
@@ -113,6 +115,11 @@ const Takecourse = () => {
 
                 </div>
             </div>
+        </div>
+        <div className="mt-2">
+        <Footer className="mt-4"></Footer>
+        </div>
+           
         </div>
     );
 };
