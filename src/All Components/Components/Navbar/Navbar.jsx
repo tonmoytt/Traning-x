@@ -184,8 +184,7 @@ const Navbar = () => {
                             <button className="px-4 " onClick={() => document.getElementById('my_modal_5').showModal()}>Registration for free</button>
                             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle  ">
                             <form className="card-body">
-                        {/* name */}
-                        <div className="form-control text-sky-400">
+                       <div className="form-control text-sky-400 bg-red-200">
 
                             <input type="text"
                                 name="name"
