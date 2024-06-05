@@ -32,7 +32,7 @@ const Header = () => {
 
             </div>
             {/* second section */}
-            <div className="hidden md:block">
+            <div className="hidden md:block -mt-10">
                 <div className=" ml-[340px] w-[600px] flex rounded-md bg-sky-200 px-6 text-center absolute   ">
                     <p className="bg-pink-500 px-2 py-2 w-36 rounded-md text-white uppercase">Our service</p>
                     <Marquee pauseOnHover className="bg-gray-100">

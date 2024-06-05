@@ -77,7 +77,7 @@ const Banner = () => {
                 <SwiperSlide>
                     <div className="bg-[#0b79b9]">
                         <div className="px-10 py-10">
-                            <img className="relative h-[580px] w-full" src={banner22} alt="" />
+                            <img className="relative h-[400px] md:h-[580px] w-full" src={banner22} alt="" />
                             {/* fuel section */}
                             <div className="absolute md:-mt-[590px] md:ml-10">
 

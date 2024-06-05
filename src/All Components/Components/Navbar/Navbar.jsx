@@ -2,7 +2,7 @@
 // import img from "./../../../assets/image/logo.png"
 // import { FaAngleDown } from "react-icons/fa";
 // import { FaBookOpen } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
+// import { FaSearch } from "react-icons/fa";
 import img from "./../../../assets/image/edx-logo-elm.svg"
 import "./Style.css"
 import { IoIosArrowDown, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
@@ -72,7 +72,7 @@ const Navbar = () => {
                 {/* learn section  */}
                 <div onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="flex  text-white gap-2 px-2 rounded-sm ">
 
-                    <p id="dropdown" className="">
+                    <p id="dropdown" className="bg-black">
 
                         <div className="flex w-28 items-center">
                             <summary className="text-xl font-bold  mt-2 px-2">
@@ -172,7 +172,7 @@ const Navbar = () => {
                     <Link to="/login">
                         <button className="text-black  hidden md:block">Sign in</button>
                     </Link>
-                    <div className="bg-black">
+                    <div className="">
                         <button className="md:btn box md:bg-red-400 hover:bg-red-400 items-center">
                             {/* <Link to="/signup">
                             <p className="px-4">Registration for free</p>
