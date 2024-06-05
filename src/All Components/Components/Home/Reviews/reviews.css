@@ -31,4 +31,62 @@
   .review-card .verified {
     color: #8bc34a;
   }
+
+  /* rivews */
+  .contact-form-container {
+    background-color: #0b1d2e; /* Adjusted to match the design */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-form-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-form-container input, 
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 5px;
+    background-color: #ffffff; /* Background color for input fields */
+    color: #000; /* Text color for input fields */
+  }
+  
+  .contact-form-container button {
+    margin-left: 200px;
+    background-color: #d80c70; /* Adjusted to match the pink color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #c00b65; /* Darker shade for hover */
+  }
+  
+  .contact-form-container .note {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .contact-form-container .captcha input[type="checkbox"] {
+    margin-right: 10px;
+    text-align: center;
+  }
   
