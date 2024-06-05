@@ -45,7 +45,7 @@ const Features = () => {
         // </div>
 
         <div>
-            <div className='bg-green-500 relative'>
+            <div className='bg-green-500 md:relative'>
                 <h1 className='text-white text-5xl text-center  font-serif font-bold mt-4 pt-4'>
                     Meet our team
                 </h1>
@@ -53,11 +53,11 @@ const Features = () => {
             </div>
             {/* second   */}
              
-            <div className='grid grid-cols-3 absolute -mt-36 gap-4 mx-20 mr-6'>
+            <div className='grid md:grid-cols-3 md:absolute -mt-36 gap-4 mx-5 md:mx-20 mr-6'>
                 {/* card 1 */}
-                <div className=" w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
+                <div className=" w-[290px] md:w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
                     <figure className="px-4 pt-6 text-center mx-auto  ">
-                        <img src={communicationImage} alt="Shoes" className="rounded-t-3xl bg-gray-100 mx-10 h-[250px] w-[230px] " />
+                        <img src={communicationImage} alt="Shoes" className="rounded-t-3xl bg-gray-100 mx-10 h-[200px] md:h-[250px] w-[180px] md:w-[230px] " />
                     </figure>
                     <div className="card-body items-center text-center ">
                         <div className='bg-gray-100 px-4 '>
@@ -105,9 +105,9 @@ const Features = () => {
                     </div>
                 </div>
                 {/* card 2 */}
-                <div className=" w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
-                    <figure className="px-8 pt-6 ">
-                        <img src={tasfirul} alt="Shoes" className="rounded-t-3xl bg-gray-100 mx-8 h-[250px] w-[230px]" />
+                <div className=" w-[290px] md:w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
+                    <figure className="px-4 pt-6 text-center mx-auto  ">
+                        <img src={tasfirul} alt="Shoes" className="rounded-t-3xl bg-gray-100 mx-10 h-[200px] md:h-[250px] w-[180px] md:w-[230px] " />
                     </figure>
                     <div className="card-body items-center text-center ">
                         <div className='bg-gray-100 px-4 '>
@@ -155,9 +155,9 @@ const Features = () => {
                     </div>
                 </div>
                 {/* card 3 */}
-                <div className=" w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
-                    <figure className="px-8 pt-6 pb-">
-                        <img src={man} alt="Shoes" className="rounded-xl bg-gray-100 mx-8 h-[250px] w-[230px]" />
+                <div className=" w-[290px] md:w-[350px] bg-base-100 shadow-lg rounded-3xl mb-6">
+                    <figure className="px-4 pt-6 text-center mx-auto  ">
+                        <img src={man} alt="Shoes" className="rounded-t-3xl bg-gray-100 mx-10 h-[200px] md:h-[250px] w-[180px] md:w-[230px] " />
                     </figure>
                     <div className="card-body items-center text-center ">
                         <div className='bg-gray-100 px-4 '>

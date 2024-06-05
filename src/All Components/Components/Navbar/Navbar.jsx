@@ -65,12 +65,12 @@ const Navbar = () => {
         //         </div>
         //     </div>
         // </div>
-        <div className="flex justify-between">
+        <div className="flex md:justify-between ">
             {/* first/logo section */}
-            <div className="flex gap-4 py-4 ml-6">
-                <Link to="/"><img className="h-12 w-12" src={img} alt="" /></Link>
+            <div className="flex gap- py-4 md:ml-6">
+                <Link to="/"><img className="h-12 w- hidden md:block" src={img} alt="" /></Link>
                 {/* learn section  */}
-                <div onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="flex bg-black text-white gap-2 px-2 rounded-sm ">
+                <div onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)} className="flex  text-white gap-2 px-2 rounded-sm ">
 
                     <p id="dropdown" className="">
 
@@ -161,19 +161,19 @@ const Navbar = () => {
                 </div> */}
             </div>
             {/* second/registion section */}
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center   ">
                 <Link to="/previous-page">
-                    <button className="edx-button hover:bg-orange-300 hover:text-lg hover:px-1 hover:rounded-md">
+                    <button className="edx-button  hidden md:block hover:bg-orange-300 hover:text-lg hover:px-1 hover:rounded-md">
                         Case studies
                     </button>
                 </Link>
-                <div className="box2 bg-gray-200 px-10 items-center flex ml-4">
+                <div className="md:box2 md:bg-gray-200 px-10 items-center flex ml-4">
 
                     <Link to="/login">
-                        <button className="text-black">Sign in</button>
+                        <button className="text-black  hidden md:block">Sign in</button>
                     </Link>
-                    <div className="">
-                        <button className="btn box bg-red-400 hover:bg-red-400 items-center">
+                    <div className="bg-black">
+                        <button className="md:btn box md:bg-red-400 hover:bg-red-400 items-center">
                             {/* <Link to="/signup">
                             <p className="px-4">Registration for free</p>
                         </Link> */}
@@ -181,7 +181,7 @@ const Navbar = () => {
                             {/* modal  */}
 
                             {/* Open the modal using document.getElementById('ID').showModal() method */}
-                            <button className="px-4 " onClick={() => document.getElementById('my_modal_5').showModal()}>Registration for free</button>
+                            <button className="md:px-4 btn bg-red-400 text-lg md:text-base" onClick={() => document.getElementById('my_modal_5').showModal()}>Registration <span className="hidden md:block">for free</span></button>
                             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle  ">
                             <form className="card-body">
                        <div className="form-control text-sky-400 bg-red-200">

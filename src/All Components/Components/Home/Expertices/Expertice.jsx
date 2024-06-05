@@ -13,7 +13,7 @@ const Expertice = () => {
                 </div>
 
 
-                <div className="flex justify-center gap-6">
+                <div className="grid md:flex justify-center gap-6">
                     <div className="expertise-card bg-yellow">
                         <img src="src/assets/image/enterprise-applications-image.png" alt="Enterprise Applications" />
                         <h3 className="text-center text-xl font-semibold mt-4">Enterprise Applications</h3>
