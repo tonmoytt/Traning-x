@@ -1,110 +1,121 @@
 .expertise-section {
-    background-color: #48a3ff; /* light blue */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 68vh;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .expertise-card {
-    width: 200px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    margin: 10px;
-    background-color: #f1f3f5; /* light blue */
-    transition: background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    
-  }
-  .expertise-card:active {
-    transform: scale(1.1);
-  }
-  
-  .expertise-card:hover {
-    background-color: #e0e0e0; /* light gray */
-    transform: scale(1.25);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .expertise-card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  
-  .expertise-card:hover {
-    background-color: #e0e0e0; /* light gray */
-  }
-  
-  .expertise-card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .expertise-card:hover {
-    background-color: #e0e0e0; /* light gray */
-  }
-  
-  .expertise-card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  .bg-yellow {
-    background-color: #f8f6cf;
-  }
-  
-  .bg-lightblue {
-    background-color: #fdfdfd;
-  }
-  
-  .bg-pink {
-    background-color: #ffb6c1;
-  }
-  
-  .bg-darkblue {
-    background-color: #7d7d98;
-  }
-  
-  .bg-blue {
-    background-color: #87cefa;
-  }
-  
-  .bg-core {
-  
-    background-color: #87cefa;
-  }
-  
-  .expertise-heading {
-  font-size: 45px;
+  background-color: #48a3ff; /* light blue */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 68vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.expertise-card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-  margin-bottom: 20px;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #f1f3f5; /* light blue */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.expertise-card:active {
+  transform: scale(1.1);
+}
+
+.expertise-card:hover {
+  background-color: #e0e0e0; /* light gray */
+  transform: scale(1.25);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bg-yellow {
+  background-color: #f8f6cf;
+}
+
+.bg-lightblue {
+  background-color: #fdfdfd;
+}
+
+.bg-pink {
+  background-color: #ffb6c1;
+}
+
+.bg-darkblue {
+  background-color: #7d7d98;
+}
+
+.bg-blue {
+  background-color: #87cefa;
+}
+
+.bg-core {
+  background-color: #87cefa;
+}
+
+.expertise-heading {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: #87cefa; /* Light blue color for expertise heading */
-  background-color: #f6f6f7; /* Light gray background for better readability */
+  color: #87cefa; /* Light blue color */
+  background-color: #f6f6f7; /* Light gray background */
   padding: 20px;
   border-radius: 120px;
+}
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+  .grid.md\:flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  
+
+  .expertise-card {
+    width: 180px;
+    height: 280px;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid.md\:flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .expertise-card {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-heading {
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 80px;
+  }
+  .expertise-card {
+    width: 90%;
+    height: auto;
+    margin: 8px 0;
+    padding: 15px;
+  }
+}

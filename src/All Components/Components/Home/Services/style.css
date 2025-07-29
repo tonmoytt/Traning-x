@@ -13,7 +13,6 @@
 }
 
 .service-card {
-   
     color: #000;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -93,6 +92,7 @@
     font-size: 1.25rem;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
+    position: relative;
 }
 
 #business-button:hover {
@@ -124,4 +124,70 @@
 
 .services-container * {
     cursor: url('/path-to-your-cursor-icon.png'), auto;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .services-grid {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .service-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .icon-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-container {
+        padding: 1rem;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .service-title {
+        font-size: 1.2rem;
+    }
+
+    .service-description {
+        font-size: 0.9rem;
+    }
+
+    #business-button {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+    }
 }

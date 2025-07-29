@@ -93,7 +93,7 @@ const Footer = () => {
 
             <div className="border-t-4 flex justify-between items-center">
                 <div className="">
-                    <p className="text-gray-500 pt-5 pb-5" >© Copyright Tonmoy 2022</p>
+                    <p className="text-gray-500 pt-5 pb-5" >© Copyright Tonmoy 2025</p>
                 </div>
                 <div>
                     <img src={img} alt="" />

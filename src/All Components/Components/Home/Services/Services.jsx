@@ -22,7 +22,6 @@ const services = [
     }
 ];
 
-
 const Services = () => {
     return (
         <div className="services-container text-center py-16 md:mt-[500px]">
@@ -36,7 +35,7 @@ const Services = () => {
                         <h3 className="service-title text-[#21A1AD]">{service.title}</h3>
                         <p className="service-description">{service.description}</p>
                         <div className="service-arrow">
-                           
+                            {/* You can add arrow icon here if needed */}
                         </div>
                         <div className='text-center mt-2'>
                             <button className='bg-[#22A6B3] text-white px-2 py-1 rounded-md'>

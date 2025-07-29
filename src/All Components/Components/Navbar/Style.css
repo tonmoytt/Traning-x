@@ -5,25 +5,34 @@
 #submenu {
     z-index: 2;
     visibility: hidden;
-   
     margin-top: 12px;
-   margin-right: 100px;
-   
+    margin-right: 100px;
     padding-bottom: 10px;
     border-radius: 10px;
     position: absolute;
+    width: 280px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transition: visibility 0.3s ease;
 }
-
 
 p:hover ul#submenu {
     visibility: visible;
 }
 
-.box{
+.box {
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
 }
-.box2{
+
+.box2 {
     clip-path: polygon(8% 0%, 90% 0%, 90% 90%, 0% 90%);
 }
 
- 
+/* Responsive */
+@media (max-width: 768px) {
+    #submenu {
+        width: 200px !important;
+        margin-right: 10px !important;
+        margin-top: 8px !important;
+    }
+}

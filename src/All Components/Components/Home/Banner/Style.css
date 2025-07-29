@@ -1,3 +1,4 @@
+ /* তোমার gradient text animation */
 #color2 {
     /* letter-spacing: 1px; */
     background: linear-gradient(135deg, #ff00d2, #fed90f, #00a2ff, #09f1b8, #ff00d2, #fed90f, #00a2ff, #09f1b8);
@@ -11,17 +12,433 @@
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
 }
 
+/* Z-index class */
 .zindex{
     z-index: 2;
     overflow: visible;
+}
+
+/* Banner responsive adjustments */
+
+/* Container images responsive height */
+.relative.h-[480px] {
+    height: 320px;
+}
+@media (min-width: 768px) {
+    .relative.h-[480px] {
+        height: 480px;
+    }
+}
+.relative.h-[400px] {
+    height: 280px;
+}
+@media (min-width: 768px) {
+    .relative.h-[400px] {
+        height: 400px;
+    }
+}
+.md\:h-\[580px\] {
+    height: 400px;
+}
+@media (min-width: 768px) {
+    .md\:h-\[580px\] {
+        height: 580px;
+    }
+}
+
+/* Positioning fixes for small screens */
+.absolute.-mt-\[350px\] {
+    margin-top: -220px;
+    left: 1rem;
+}
+@media (min-width: 768px) {
+    .absolute.-mt-\[350px\] {
+        margin-top: -350px;
+        left: auto;
+    }
+}
+
+.md\:-mt-\[440px\] {
+    margin-top: -300px;
+}
+@media (min-width: 768px) {
+    .md\:-mt-\[440px\] {
+        margin-top: -440px;
+    }
+}
+
+.md\:ml-36 {
+    margin-left: 1rem;
+}
+@media (min-width: 768px) {
+    .md\:ml-36 {
+        margin-left: 9rem;
+    }
+}
+
+.absolute.-mt-10 {
+    margin-top: -5px;
+}
+@media (min-width: 768px) {
+    .absolute.-mt-10 {
+        margin-top: -40px;
+    }
+}
+
+/* Banner logo image */
+.absolute.-mt-28 {
+    margin-top: -160px;
+    left: 10rem;
+    width: 64px;
+    height: 64px;
+}
+@media (min-width: 768px) {
+    .absolute.-mt-28 {
+        margin-top: -112px;
+        left: 9rem;
+        width: 112px;
+        height: 144px;
+    }
+}
+
+/* Adjust the ml-52 and ml-36 */
+.ml-52 {
+    margin-left: 1rem;
+}
+@media (min-width: 768px) {
+    .ml-52 {
+        margin-left: 13rem;
+    }
+}
+
+.md\:ml-36 {
+    margin-left: 1rem;
+}
+@media (min-width: 768px) {
+    .md\:ml-36 {
+        margin-left: 9rem;
+    }
+}
+
+/* Second Swiper Slide text container */
+.absolute.md\:-mt-\[590px\] {
+    margin-top: -400px;
+    left: 0.5rem;
+}
+@media (min-width: 768px) {
+    .absolute.md\:-mt-\[590px\] {
+        margin-top: -590px;
+        left: 2.5rem;
+    }
+}
+
+.md\:ml-10 {
+    margin-left: 1rem;
+}
+@media (min-width: 768px) {
+    .md\:ml-10 {
+        margin-left: 2.5rem;
+    }
+}
+
+.mx-20 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+@media (min-width: 768px) {
+    .mx-20 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+.my-10 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid layout fix */
+.grid.grid-cols-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .grid.grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+.items-center {
+    align-items: center;
+}
+
+.pl-16 {
+    padding-left: 1rem;
+}
+@media (min-width: 768px) {
+    .pl-16 {
+        padding-left: 4rem;
+    }
+}
+
+.w-10.h-10 {
+    width: 30px;
+    height: 30px;
+}
+@media (min-width: 768px) {
+    .w-10.h-10 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.ml-5 {
+    margin-left: 0.5rem;
+}
+@media (min-width: 768px) {
+    .ml-5 {
+        margin-left: 1.25rem;
+    }
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.w-\[200px\] {
+    width: 150px;
+}
+@media (min-width: 768px) {
+    .w-\[200px\] {
+        width: 200px;
+    }
+}
+
+.bg-orange-400 {
+    background-color: #f97316;
+}
+
+.py-\[2px\] {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.rounded-sm {
+    border-radius: 0.125rem;
+}
+
+.mt-28 {
+    margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+    .mt-28 {
+        margin-top: 7rem;
+    }
+}
+
+/* Button hover text size and bg changes */
+button:hover {
+    transition: all 0.3s ease;
+}
+
+.hover\:text-3xl:hover {
+    font-size: 1.875rem;
+}
+
+.hover\:bg-sky-400:hover {
+    background-color: #38bdf8;
+}
+
+/* Flex and gap adjustments for small screens */
+.flex.justify-between.mt-10.ml-36 {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .flex.justify-between.mt-10.ml-36 {
+        margin-left: 9rem;
+        margin-top: 2.5rem;
+        justify-content: space-between;
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Items-center fixes */
+.items-center.flex.gap-1.bg-white.text-white {
+    color: transparent; /* text white on white bg hides text */
+}
+.items-center.flex.gap-1 {
+    color: #000;
+}
+
+/* ml-16 adjustments */
+.ml-16 {
+    margin-left: 0.5rem;
+}
+@media (min-width: 768px) {
+    .ml-16 {
+        margin-left: 4rem;
+    }
+}
+
+/* Image section margin adjustments */
+.ml-\[170px\] {
+    margin-left: 1rem;
+}
+@media (min-width: 768px) {
+    .ml-\[170px\] {
+        margin-left: 42rem;
+    }
+}
+
+.-mt-36.absolute {
+    margin-top: -200px;
+    position: absolute;
+    border-radius: 1.5rem;
+}
+@media (min-width: 768px) {
+    .-mt-36.absolute {
+        margin-top: -144px;
+        position: absolute;
+        border-radius: 1.5rem;
+    }
+}
+
+/* For the last div containing dot image */
+img[class=""] {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For the main container with mx-20, adjust for small screens */
+.mx-20 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+@media (min-width: 768px) {
+    .mx-20 {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+/* Grid for 2 columns to stack on small screens */
+.grid.grid-cols-2.items-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .grid.grid-cols-2.items-center {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+.pl-16 {
+    padding-left: 1rem;
+}
+@media (min-width: 768px) {
+    .pl-16 {
+        padding-left: 4rem;
+    }
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.ml-5 {
+    margin-left: 0.5rem;
+}
+@media (min-width: 768px) {
+    .ml-5 {
+        margin-left: 1.25rem;
+    }
+}
+
+.w-10.h-10 {
+    width: 30px;
+    height: 30px;
+}
+@media (min-width: 768px) {
+    .w-10.h-10 {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+.text-blue-900 {
+    color: #1e40af;
+}
+
+.flex.mt-10 {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 480px) {
+    #color2 {
+        font-size: 2rem !important;
+    }
+    .text-5xl {
+        font-size: 2rem !important;
+    }
+    .text-6xl {
+        font-size: 2.5rem !important;
+    }
+    .text-7xl {
+        font-size: 2.5rem !important;
+    }
+    .mx-20 {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .pl-16 {
+        padding-left: 1rem !important;
+    }
+    .ml-36, .ml-52, .ml-16 {
+        margin-left: 1rem !important;
+    }
+    .-mt-350px, .-mt-440px, .-mt-10, .-mt-28 {
+        margin-top: -150px !important;
+    }
+    .-mt-590px {
+        margin-top: -300px !important;
+    }
+    .-mt-36 {
+        margin-top: -150px !important;
+    }
 }

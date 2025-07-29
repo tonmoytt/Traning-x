@@ -12,7 +12,6 @@ const Expertice = () => {
                     </h2>
                 </div>
 
-
                 <div className="grid md:flex justify-center gap-6">
                     <div className="expertise-card bg-yellow">
                         <img src="src/assets/image/enterprise-applications-image.png" alt="Enterprise Applications" />
